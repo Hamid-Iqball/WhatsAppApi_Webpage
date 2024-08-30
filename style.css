@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    /* font-size: 10px; */
+    font-size: 62.2%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  body {
+ max-width: 130rem;
+    line-height: 1;
+    font-weight: 400;
+    color: #333;
+    container: fit;
+    margin: 0 auto;
+    /* Only works if thee is nothing absolutely positioned in relation to body */
+    /* overflow-x: hidden; */
+  }
+.Section-hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 8rem;
+    padding: 2rem 2rem;
+    margin: 2rem auto;
+ 
+}
+
+.hero-text{
+    color: #333333;
+    padding: 4rem 2rem;
+}
+.hero-heading{
+    font-size: 6rem;
+
+    font-weight: 700;
+}
+.hero-description{
+    font-size: 2.8rem;
+    margin: 2rem 0;
+}
+.cta-btn{
+    font-size: 2rem;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    border: 3px solid #059391;
+    border-radius: 1rem;
+    background-color: transparent;
+    color: #494849;
+    font-weight: 600;
+}
+.hero-img-box{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.hero-img-boxx{
+    position: relative;
+
+}
+.hero-img{
+    width:46rem;
+}
+.hero-img-text{
+    position: absolute;
+    padding: 1rem 1.6rem;
+    font-size: 2rem;
+    background-color: #4BAD8F;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+}
+.text-1{
+    top: 15rem;
+   left: -13.6rem;
+}
+.text-2{
+    top: 23rem;
+    left: -22rem;
+}
+
+.text-3{
+    top: 31rem;
+    left: -17rem;
+}
+
+/* ######### How Can ####3 */
+.how-whatsApp-drive{
+    max-width: 100%;
+    margin: 4rem auto;
+    background-color: #FAFCFE;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+    color:#333333 ;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.WhatsAPP-video-text{
+    width: 100%;
+    background-color: #E7F6FD;
+    padding: 4rem ;
+    border-radius: 2rem;
+}
+.WhatsAPP-video-heading{
+    font-size: 4.4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.video-text-1{
+ font-size: 2.6rem;
+ margin-bottom: 2rem;
+ font-weight: 700;
+}
+.textSpan{
+    color: #059391;
+    border: 2px solid #059391;
+    padding: 0 0.7rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+
+/* ###### Service-heading ###### */
+.services{
+    padding: 3rem 2rem;
+}
+.service-header{
+   text-align: center;
+    max-width:80rem ;
+    margin: 0 auto 3rem auto;
+}
+
+.service-heading{
+    font-size: 4rem;
+}
+.steps{
+    display: ;
+}
