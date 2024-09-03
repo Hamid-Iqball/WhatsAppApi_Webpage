@@ -12,7 +12,7 @@
     scroll-behavior: smooth;
   }
   body {
- max-width: 144rem;
+    max-width: 144rem;
     line-height: 1;
     font-weight: 400;
     color: #333;
@@ -26,8 +26,8 @@
     max-width: 140rem;
     grid-template-columns: repeat(2,1fr);
     gap: 8rem;
-    /* padding: 2rem 2rem; */
-    margin: 2rem ;
+    padding: 2rem 2rem;
+
     background: url("./bg.svg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -168,7 +168,7 @@
 /* Media */
 
 .Supported-Media{
-    max-width: 140rem;
+    max-width: 110rem;
     margin: 4rem auto;
     
 }
@@ -190,15 +190,19 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 6rem;
-    max-width: 90rem;
-    margin: 8rem auto 6rem auto;
+    /* max-width: 90rem; */
+    margin: 8rem 6rem;
    
 }
 .media{
     width: 16rem;
     height: 16rem;
-    text-align: center;
-    align-self: center;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   justify-content: space-between;
+   align-items: center;
+   margin: 2rem;
 }
 .media-icon{
     width: 12rem;
@@ -225,7 +229,9 @@
 }
 .ChatBot-heading{
     font-size: 3rem;
+    font-weight: 500;
     margin-bottom: 1.6rem;
+    text-align: center;
 }
 .WA-chatbot-text{
     font-size: 2rem;
@@ -434,7 +440,7 @@ padding: 2rem;
 
 }
 .select-input{
-    padding: 0.5rem;
+    padding: 1rem;
     width: 21rem;
     border: 1px solid #7A7A7A;
     border-radius: 1rem;
@@ -446,7 +452,7 @@ padding: 2rem;
     gap: 2rem;
 }
 label{
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 .Rate-Table{
@@ -487,6 +493,7 @@ label{
 max-width: 130rem;
 margin: 4rem auto;
 text-align: center;
+padding: 5px;
 }
 .try{
     font-size: 4rem;
@@ -537,7 +544,7 @@ text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 1.2rem;
+    /* margin-bottom: 1.2rem; */
     cursor: pointer;
 }
 .accordian-icon{
@@ -564,3 +571,364 @@ text-align: center;
 .accordian-icon.active{
     transform: rotate(-180deg);
 }
+
+/* MEDIA Query */
+
+@media(max-width:1230px){
+    .Section-hero{
+        gap: 4rem;
+        
+    }
+   .hero-heading{
+    font-size: 4rem;
+   }
+   .hero-description{
+    font-size: 2.2rem;
+   }
+   .hero-img{
+    width: 58rem;
+   }
+   .chatBot{
+    grid-template-columns: 50fr 25fr 25fr;
+   }
+}
+
+@media(max-width:1160px){
+
+    .hero-heading{
+        font-size: 3.7rem;
+       }
+       .hero-description{
+        font-size: 2rem;
+       }
+       .hero-img{
+        width: 50rem;
+       }
+    .chatbot-img{
+        width: 18rem;
+    }
+    .ChatBot-notification{
+top: -16rem;
+    }
+}
+
+@media(max-width:946px){
+    .Section-hero{
+        gap: 0rem;
+grid-template-columns: 60fr 40fr;        
+    }
+    .hero-heading{
+        font-size: 3.3rem;
+       }
+       .hero-description{
+        font-size: 1.8rem;
+       }
+       .hero-img{
+        width: 44rem;
+       }
+       .chatbot-img{
+        width: 16rem;
+    }
+    .WA-chatbot-text{
+        font-size: 1.7rem;
+    }
+}
+
+@media(max-width:908px){
+    .hero-heading{
+        font-size: 3.1rem;
+       }
+       .hero-description{
+        font-size: 1.6rem;
+       }
+       .hero-img{
+        width: 40rem;
+       }
+       .services{
+        margin: 2rem 4rem;
+       }
+
+       .service-heading{
+        font-size: 3.5rem;
+        font-weight: 600;
+       }
+
+       .steps{
+        column-gap: 3rem;
+       }
+       .steps-logo{
+        width: 5rem;
+       }
+       .steps-heading{
+        font-size: 3rem;
+       }
+       .steps-text{
+        font-size: 1.8rem;
+       }
+       .step-images{
+        width: 34rem;
+       }
+    }
+
+    @media(max-width:858px){
+        .chatbot-img{
+            width: 14rem;
+        }
+        .WA-chatbot-text{
+            font-size: 1.5rem;
+        }
+        .ChatBot-notification{
+            top: -14rem;
+            font-size: 2rem;
+                }
+    }
+    @media(max-width:792px){
+       
+    
+           .service-heading{
+            font-size: 3.2rem;
+            font-weight: 600;
+           }
+    
+           .steps{
+            column-gap: 3rem;
+           }
+           .steps-logo{
+            width: 4rem;
+           }
+           .steps-heading{
+            font-size: 2.8rem;
+           }
+           .steps-text{
+            font-size: 1.6rem;
+           }
+           .step-images{
+            width: 30rem;
+           }
+           .hero-img{
+            width: 38rem;
+           }
+    }
+
+    @media(max-width:736px){
+        .Section-hero{
+            grid-template-columns: 1fr;
+        }
+        .hero-text{
+            text-align: center;
+            margin: 0rem 4rem;
+        }
+        .hero-heading{
+            font-size: 4.8rem;
+            line-height: 1.1;
+        }
+        .hero-description{
+            font-size: 2.2rem;
+        }
+        .hero-img-box{
+            justify-content: center;
+        }
+        .hero-img{
+            width: 44rem;
+        }
+        .media-content{
+            margin: 4rem;
+        }
+        .ChatBot{
+            grid-template-columns: 1fr;
+            row-gap: 6rem;
+        } 
+        .ChatBot-heading{
+          font-weight: 600;
+            text-align: center;
+        }
+        .WA-chatbot-text{
+            font-size: 1.6rem;
+        }
+        .ChatBot-notification{
+            top: -7rem;
+            right: 10%;
+            gap: -1rem;
+        }
+        .ChatBot-notification h1{
+            font-size: 2rem;
+            font-weight: 600;
+            color: #333;
+        }
+        .ChatBot-notification h2{
+            font-size: 1.4rem;
+    
+        }
+        .chatbot-img{
+            scale: 1;
+            width: 22rem;
+        }
+        .download-heading{
+            font-size: 3rem;
+        }
+        .download-text{
+            padding: 1rem 1.4rem;
+            font-size: 2rem;
+        }
+    }
+
+    @media(max-width:692px){
+        .steps{
+            grid-template-columns: 60fr 40fr;
+      
+        }
+        .step-images{
+            width: 20rem;
+        }
+        .step-text-box{
+            gap: 1rem;
+        }
+    }
+
+    @media(max-width:584px){
+        .hero-heading{
+            font-size: 3.8rem;
+        }
+        .hero-description{
+            font-size: 2rem;
+        }
+        .cta-btn{
+            font-size: 1.8rem;
+            padding: 1rem 3rem;
+        }
+      
+
+        .steps{
+            grid-template-columns: 1fr;
+            row-gap: 4rem;
+        }
+       .box-1{
+        grid-row: 1;
+       }
+         .box-2{
+            grid-row: 5;
+         }
+         .step-images{
+            width: 30rem;
+         }
+    }
+
+    @media(max-width:502px){
+        .services{
+            padding: 0.5rem;
+        }
+        .hero-heading{
+            font-size: 3.4rem;
+        }
+        .hero-text{
+            margin: 0 1rem;
+        }
+        .hero-description{
+            font-size: 1.7rem;
+        }
+        .hero-img{
+            width: 40rem;
+        }
+        .media-headin{
+            text-align: center;
+        }
+        .section-Rates{
+            padding: 2rem;
+        }
+        .select-inputs{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+            max-width: 50rem;
+            margin: 6rem auto;
+            gap: 2rem;
+        
+        }
+        .table-row h1{
+            font-size: 1.6rem;
+            color: #059391;
+            text-align: start;
+            
+        }
+        .table-row p{
+            font-size: 1.4rem;
+            text-align: start;
+            
+        }
+        .table-row h2{
+            text-align: start;
+            font-size: 1.5rem;
+        }
+        .try{
+            font-size: 3rem;
+        }
+        .other-APiS a{
+            padding: 1rem 3rem;
+            font-size: 2rem;
+        }
+        .Faq-heading{
+            font-size: 3rem;
+        }
+        .accordian-heading{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .accordian-text{
+            font-size: 1.4rem;
+        }
+    }
+
+    @media(max-width:424px){
+
+        .services{
+            margin: 2rem;
+        }
+        .hero-heading{
+            font-size: 3rem;
+        }
+        .hero-description{
+            font-size: 2rem;
+        }
+        .hero-img{
+            width: 34rem;
+        }
+        .step-images{
+        width:26rem;
+        }
+        .media-heading{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+    }
+
+    @media(max-width:380px){
+        .security-item{
+            max-height: 50rem;
+        }
+        .security-description{
+            padding: 10px;
+        }
+        .security-heading{
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        .Section-hero{
+            padding: 2rem 1rem;
+        }
+        .hero-text{
+            margin: 0 5px;
+        }
+        .hero-heading{
+            font-size: 2.8rem;
+        }
+        .hero-description{
+            font-size: 1.8rem;
+        }
+    }
+
+    @media(max-width:352px){
+        .hero-img{
+            width: 28rem;
+        }
+    }
