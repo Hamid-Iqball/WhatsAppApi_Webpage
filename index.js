@@ -1,8 +1,11 @@
-const accordian = document.getElementsByClassName("accordian-text")
+const accordian = document.querySelectorAll(".accordian-item")
 
-for (let i=0; i<accordian.length; i++){
-    accordian[i].addEventListener("click", function(){
-        this.classList.toggle("active")
-        console.log("hey")
+accordian.forEach((accordian)=>{
+    const icon = accordian.querySelector(".accordian-icon")
+    const content = accordian.querySelector(".accordian-text")
+
+    accordian.addEventListener("click" , function(){
+        icon.classList.toggle("active")
+        content.classList.toggle("active")
     })
-}
+})

@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -544,20 +545,22 @@ text-align: center;
     color: #818181;
 }
 
-.accordian .accordian-item .accordian-text{
+.accordian-text{
     overflow: hidden;
     font-size: 1.6em;
-    display: none;
     transition: max-height 0.3s ease, padding 0.3s ease;
     color: #676767;
     line-height: 2rem;
     max-width: 77rem;
     transition: all 0.5s ease;
     overflow-y: auto;
-    opacity: 0;
+    height: 0;
 }
 
-.active  {
-    display: block;
-    opacity: 1;
+.accordian-text.active  {
+    height: fit-content;
+ 
+}
+.accordian-icon.active{
+    transform: rotate(-180deg);
 }
