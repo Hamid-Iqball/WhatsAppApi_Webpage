@@ -177,10 +177,11 @@
 
 /* ###### Service-heading ###### */
 .services{
-    padding: 3rem 2rem;
-    margin: 2rem ;
+    padding: 3rem 0;
+    /* margin: 2rem ; */
     background-color: #fff;
 }
+
 .service-header{
    text-align: center;
     max-width:80rem ;
@@ -191,18 +192,22 @@
 }
 .steps{
     margin: 6rem auto 2rem auto;
+    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: 5rem;
     row-gap: 8rem;
+    column-gap: 5rem;
 }
 
 .steps-logo{
     width: 6rem;
 }
-.step-text-box:nth-child(3),.step-images:nth-child(4){
-    background-color: #FAFCFE;
+.step-box-2{
+    width: 100%;
 }
+
+
+
 .step-text-box{
     display: flex;
     gap:2rem;
@@ -228,8 +233,8 @@
   text-align: center;
 
 }
-/* Media */
 
+/* Media */
 .Supported-Media{
     max-width: 110rem;
     margin: 4rem auto;
@@ -885,9 +890,7 @@ padding: 5px;
         font-weight: 600;
        }
 
-       .steps{
-        column-gap: 3rem;
-       }
+   
        .steps-logo{
         width: 5rem;
        }
@@ -927,9 +930,7 @@ padding: 5px;
             font-weight: 600;
            }
     
-           .steps{
-            column-gap: 3rem;
-           }
+         
            .steps-logo{
             width: 4rem;
            }
