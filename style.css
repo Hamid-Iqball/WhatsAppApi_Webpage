@@ -27,7 +27,7 @@
     position: fixed;
     background-color: whitesmoke;
     top: 0;
-    left: 30%;
+    left: 35%;
   }
   .popup{
   border: 1px solid #DEE2E6;
@@ -478,6 +478,7 @@ text-align: center;
 margin: 0 3rem;
 }
 .benifits-heading{
+  
 font-size: 3.6rem;
 font-weight: 700;
 }
@@ -505,16 +506,20 @@ font-weight: 700;
     font-size: 2rem;
     font-weight: 700;
     /* margin-bottom: 2rem; */
-    text-align: start;
-    padding: 0 0.5rem;
+    text-align: center;
+    padding: 0 1rem ;
+    width: 100%;
 }
 .benifit-text{
     font-size: 1.6rem;
     color: #7A7A7A;
     line-height: 1.1;
-    text-align: start;
-    padding:0  0.5rem;
+    text-align:center;
+    
 
+}
+.b-text-1{
+    margin-top: 3rem;
 }
 
 /* Security */
@@ -659,8 +664,11 @@ label{
     font-weight: 600;
 }
 .select-input{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+
 }
+
 .Rate-Table{
     max-width: 60rem;
     margin: 3rem auto;
