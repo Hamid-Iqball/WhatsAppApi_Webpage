@@ -7,10 +7,9 @@ function goToNextSlide() {
   radios[currentIndex].checked = true;
 }
 
-setInterval(goToNextSlide, 3000);
+setInterval(goToNextSlide, 5000);
 
 // Conversion Rates
-
 const conversionRates = {
   'Argentina': { 'Marketing': 0.0618, 'Utility': 0.0408, 'Authentication':0.0367, 'Services':0.0316 },
   'Brazil': { 'Marketing': 0.0625, 'Utility': 0.035, 'Authentication':0.0315, 'Services':0.03},
@@ -64,19 +63,34 @@ function updateConversionRate(){
 }
 
 // Accordian
-const accordian = document.querySelectorAll(".accordian-item")
+const accordions = document.querySelectorAll(".accordian-item");
 
-accordian.forEach((accordian)=>{
-    const icon = accordian.querySelector(".accordian-icon")
-    const content = accordian.querySelector(".accordian-text")
-    const header = accordian.querySelector(".accordian-heading")
+accordions.forEach((accordion) => {
+  const icon = accordion.querySelector(".accordian-icon");
+  const content = accordion.querySelector(".accordian-text");
+  const header = accordion.querySelector(".accordian-heading");
 
-    accordian.addEventListener("click" , function(){
-        icon.classList.toggle("active")
-        content.classList.toggle("active")
-        header.classList.toggle("active")
-    })
-})
+  accordion.addEventListener("click", function () {
+    // Close all other accordion items
+    accordions.forEach((otherAccordion) => {
+      if (otherAccordion !== accordion) {
+        // Remove the active class from other accordion items
+        const otherIcon = otherAccordion.querySelector(".accordian-icon");
+        const otherContent = otherAccordion.querySelector(".accordian-text");
+        const otherHeader = otherAccordion.querySelector(".accordian-heading");
+
+        otherIcon.classList.remove("active");
+        otherContent.classList.remove("active");
+        otherHeader.classList.remove("active");
+      }
+    });
+    // Toggle the active class for the clicked accordion
+    icon.classList.toggle("active");
+    content.classList.toggle("active");
+    header.classList.toggle("active");
+  });
+});
+
 
 // popup
 const Popup = document.querySelector('.popup_container')
