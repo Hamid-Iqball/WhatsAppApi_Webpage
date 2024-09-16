@@ -1,0 +1,53 @@
+/* Container to give perspective for 3D effect */
+.container {
+    perspective: 1000px; /* Create the 3D effect */
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Cards container to enable 3D transformations */
+  .cards {
+    position: relative;
+    width: 100%; /* Adjust based on your needs */
+    height: 500px;
+    transform-style: preserve-3d; /* Preserve 3D transformations for children */
+    transition: transform 1s ease-in-out; /* Smooth transition for rotation */
+  }
+  
+ .chatBot-img-div input{
+    display: none;
+ }
+  
+  /* Styles for the active slide */
+  #slide1.active, #slide2.active {
+    transform: scale(1.1); /* Make active slide larger */
+    z-index: 2; /* Ensure active slide is on top */
+  }
+  
+  /* Styles for the non-active slide */
+  #slide1.active, #slide2.active {
+    transform: scale(0.9); /* Make non-active slides smaller */
+    z-index: 1; /* Ensure non-active slides are behind */
+  }
+  
+  /* Position the slides in a 3D space */
+  #slide1 {
+    transform:rotateY(0deg)  translateZ(100px) translateX(-30px); /* Initial position */
+  }
+  
+  #slide2 {
+    transform: rotateY(-180deg) translateZ(200px) translateX(-40px); /* Positioned behind */
+  }
+  
+  /* Transition effect */
+  #s1:checked ~ .cards {
+    transform: rotateY(0deg); /* Show first slide */
+  }
+  
+  #s2:checked ~ .cards {
+    transform: rotateY(-180deg); /* Rotate to show the second slide */
+  }
+  

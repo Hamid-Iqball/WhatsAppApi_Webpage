@@ -1,13 +1,3 @@
-// Slider
-const radios = document.querySelectorAll('input[name="slider"]');
-let currentIndex = 0;
-function goToNextSlide() {
-  radios[currentIndex].checked = false;
-  currentIndex = (currentIndex + 1) % radios.length;
-  radios[currentIndex].checked = true;
-}
-
-setInterval(goToNextSlide, 5000);
 
 // Conversion Rates
 const conversionRates = {
