@@ -583,16 +583,18 @@ padding: 2rem;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    text-decoration: none;
 }
 .download-text:hover{
    
     background-color: #1ab8b5;
- 
+    text-decoration: none;
     transition: all 0.3s;
 }
 .download-icon{
     width: 2.2rem;
 }
+
 
 /* Rates */
 .section-Rates{
