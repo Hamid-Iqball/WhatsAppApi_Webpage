@@ -1,5 +1,5 @@
 
-// Conversion Rates
+// Conversion Rates CountryWise
 const conversionRates = {
   'Argentina': { 'Marketing': 0.0618, 'Utility': 0.0408, 'Authentication':0.0367, 'Services':0.0316 },
   'Brazil': { 'Marketing': 0.0625, 'Utility': 0.035, 'Authentication':0.0315, 'Services':0.03},
